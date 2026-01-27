@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="980" height="980" viewBox="0 0 980 980" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract security illustration">
+  <defs>
+    <radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(320 220) rotate(55) scale(760)">
+      <stop stop-color="#7C3AED" stop-opacity="0.75"/>
+      <stop offset="0.52" stop-color="#38BDF8" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#22C55E" stop-opacity="0.18"/>
+    </radialGradient>
+    <linearGradient id="g2" x1="220" y1="180" x2="780" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8" stop-opacity="0.95"/>
+      <stop offset="0.55" stop-color="#7C3AED" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#22C55E" stop-opacity="0.85"/>
+    </linearGradient>
+    <filter id="blur" x="-60" y="-60" width="1100" height="1100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <!-- soft glow -->
+  <circle cx="520" cy="420" r="360" fill="url(#g1)" filter="url(#blur)"/>
+
+  <!-- circuit lines -->
+  <g opacity="0.7" stroke="#A5B4FC" stroke-opacity="0.5" stroke-width="3">
+    <path d="M150 540 C260 470, 310 460, 420 420" />
+    <path d="M220 690 C360 610, 420 600, 520 540" />
+    <path d="M780 320 C680 380, 640 410, 570 460" />
+    <path d="M760 520 C650 560, 610 590, 520 640" />
+    <circle cx="150" cy="540" r="7" fill="#A5B4FC" fill-opacity="0.55" stroke="none"/>
+    <circle cx="220" cy="690" r="7" fill="#A5B4FC" fill-opacity="0.55" stroke="none"/>
+    <circle cx="780" cy="320" r="7" fill="#A5B4FC" fill-opacity="0.55" stroke="none"/>
+    <circle cx="760" cy="520" r="7" fill="#A5B4FC" fill-opacity="0.55" stroke="none"/>
+  </g>
+
+  <!-- shield -->
+  <path
+    d="M490 170
+       C420 220, 330 250, 250 270
+       V470
+       C250 640, 360 760, 490 820
+       C620 760, 730 640, 730 470
+       V270
+       C650 250, 560 220, 490 170 Z"
+    fill="rgba(255,255,255,0.06)"
+    stroke="rgba(255,255,255,0.22)"
+    stroke-width="3"
+  />
+
+  <path
+    d="M490 210
+       C430 250, 360 275, 300 290
+       V460
+       C300 610, 390 710, 490 760
+       C590 710, 680 610, 680 460
+       V290
+       C620 275, 550 250, 490 210 Z"
+    fill="rgba(255,255,255,0.04)"
+    stroke="rgba(255,255,255,0.14)"
+    stroke-width="2"
+  />
+
+  <!-- lock -->
+  <g>
+    <rect x="392" y="430" width="196" height="180" rx="34" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.22)" stroke-width="3"/>
+    <path
+      d="M438 430 V385
+         C438 345, 466 315, 490 315
+         C514 315, 542 345, 542 385
+         V430"
+      stroke="url(#g2)"
+      stroke-width="10"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M490 500
+         C505 500, 518 513, 518 528
+         C518 541, 509 552, 498 555
+         V575
+         C498 580, 494 584, 490 584
+         C486 584, 482 580, 482 575
+         V555
+         C471 552, 462 541, 462 528
+         C462 513, 475 500, 490 500 Z"
+      fill="rgba(255,255,255,0.82)"
+      fill-opacity="0.85"
+    />
+  </g>
+
+  <!-- subtle dots -->
+  <g opacity="0.45" fill="rgba(255,255,255,0.55)">
+    <circle cx="295" cy="355" r="3"/>
+    <circle cx="325" cy="332" r="2.5"/>
+    <circle cx="650" cy="360" r="3"/>
+    <circle cx="620" cy="334" r="2.5"/>
+    <circle cx="355" cy="710" r="3"/>
+    <circle cx="630" cy="710" r="3"/>
+  </g>
+</svg>
+
